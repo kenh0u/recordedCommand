@@ -52,7 +52,7 @@ Chinachuの仕様として`config.json`内に`recordedCommand`を書くと録画
 
 ## cronの設定
 
-ログファイルとGoogle Driveのファイルの定期削除の設定例です。この場合は14日前のファイルを削除します。  
+ログファイルとGoogle Driveのmp4ファイルの定期削除の設定例です。この場合は14日前のファイルを削除します。  
 findの後ろのファイルパス部分は環境に合わせて書き換えてください。
 
     SHELL=/bin/bash
