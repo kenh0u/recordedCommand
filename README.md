@@ -33,13 +33,12 @@ Chinachuのドキュメント中には簡単な例しか無かったと思うの
 
 - `RECORDEDJSON`: Chinachuインストールディレクトリ以下の`data/recorded.json`
   - example: `RECORDEDJSON="/home/chinachu/chinachu/data/recorded.json"`
-- `TSFILENAME`,`MP4FILENAME`: 変更不要
-- `LOG`: ログファイル名
-  - example: `LOG="/mnt/hdd/share/log/${TSFILENAME%.*}.log"`
-- `MP4FILEPATH`: エンコードしたmp4の保存先
-  - example: `MP4FILEPATH="/mnt/hdd/share/mp4/${MP4FILENAME}"`
-- `GDFILEPATH`: Google Drive等へのmp4の保存先
-  - example: `GDFILEPATH="/mnt/gd/mp4/${MP4FILENAME}"`
+- `LOGDIR`: ログファイル名
+  - example: `LOGDIR="/mnt/hdd/share/log/"`
+- `MP4DIR`: エンコードしたmp4の保存先
+  - example: `MP4DIR="/mnt/hdd/share/mp4/"`
+- `GDDIR`: Google Drive等へのmp4の保存先
+  - example: `GDDIR="/mnt/gd/mp4/"`
 
 ## Chinachu側の設定
 
