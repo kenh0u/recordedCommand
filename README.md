@@ -10,7 +10,7 @@ Chinachuのドキュメント中には簡単な例しか無かったと思うの
 
 - HandBrakeCLIによるmp4へのエンコード
 - `recorded.json`への自動追記によるmp4ファイルのChinachu WUI上での管理
-- ファイル名を判別しGoogle Driveにアップロード
+- ファイル名を判別しGoogle Driveにアップロード (コメントアウトしてあります)
   - Chinachuのスケジューラーによる録画はファイル名を個別に設定できるので、例えばルールの録画ファイル名フォーマットを  
     `[<date:yymmdd>][gd]<title>.m2ts`  
     に設定するとファイル名に`[gd]`が入るのでこのスクリプトでGoogle Driveにアップロードできます。
@@ -22,7 +22,7 @@ Chinachuのドキュメント中には簡単な例しか無かったと思うの
 - HandBrakeCLI
   - このスクリプトの設定では`libfdk_aac`を使用
 - google-drive-ocamlfuse
-  - Google Driveへのアップロードに使用
+  - Google Driveへのアップロードをしない場合は不要
 
 # Installation
 
@@ -37,8 +37,10 @@ Chinachuのドキュメント中には簡単な例しか無かったと思うの
   - example: `LOGDIR="/mnt/hdd/share/log/"`
 - `MP4DIR`: エンコードしたmp4の保存先
   - example: `MP4DIR="/mnt/hdd/share/mp4/"`
-- `GDDIR`: Google Drive等へのmp4の保存先
+- `GDDIR`: Google Drive等へのmp4の保存先 (コメントアウトしてあります)
   - example: `GDDIR="/mnt/gd/mp4/"`
+
+Google Driveへアップロードする部分はコメントアウトしてあるので、使う場合はコメントアウトを外してください。
 
 ## Chinachu側の設定
 
